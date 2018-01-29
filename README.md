@@ -98,5 +98,9 @@ also said lines of code. Shell.sh is the unix shell script that the user must ca
 order to use the program. It's the one that calls both the JPlag.jar and the rest of 
 the python scripts.
 
+### Contributions
 
+Pablo - Research, JPlag testing, Unix scripting
+
+Nacho - HTML parsing, displaying JPlag results
 
