@@ -18,7 +18,9 @@ you see necessary.
 ### Prerequisites
 
 Python 2.7
+
 HTMLParser for Python 2.7
+
 Java Runtime Environment
 
 ### Use
