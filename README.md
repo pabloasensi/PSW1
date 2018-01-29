@@ -12,8 +12,7 @@ code submission and the percentage of plagiarism.
 
 ## Getting Started
 
-To use the software you simply have to extract the contents of the zip package wherever 
-you see necessary.
+To use the software simply clone the repository to your computer
 
 ### Prerequisites
 
