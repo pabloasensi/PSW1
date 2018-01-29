@@ -74,7 +74,29 @@ bash shell.sh -c java17 ./ex1/student1 ./ex1/student2
 Once executed the program will ask you if you desire to eliminate certain leftover 
 files.
 
-### 
+### Files
+
+The program consists of the following files:
+
+* Jplag.jar
+* batchparse.py
+* codedisplay.py
+* parse.py
+* shell.sh
+
+The Jplag jar file is the core jplag module with all of its java dependencies stored 
+into one package. This allows us to execute it anywhere as long as we have the 
+Java Runtime Environment. The .py files are python scripts that are executed once 
+JPlag has finished performing the code comparison. It goes through the html files 
+left over by JPlag in the "result" folder and looks for the appropriate tags 
+containing the information we wish to display on screen. Specifically, batchparse.py 
+shows the list of percentages of similarity of every pair of submissions in descending 
+order. Naturally, this one is executed by the -c option of the shell script. On the other 
+hand, parse.py and codedisplay.py belong to the -s option, parse.py showing the percentage 
+of similarity and the line numbers where the code of both submissions are the same and 
+also said lines of code. Shell.sh is the unix shell script that the user must call in 
+order to use the program. It's the one that calls both the JPlag.jar and the rest of 
+the python scripts.
 
 
 
