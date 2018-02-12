@@ -4,13 +4,10 @@ from HTMLParser import HTMLParser
 class MyHTMLParser(HTMLParser):
 	neededata = False
 	avsim = False
-	counter = 1
 
 	def handle_starttag(self, tag, attrs):
 		if tag == 'td' and self.avsim:
 			self.neededata = True
-			print self.counter
-			self.counter += 1
 			# print "Encountered a start tag:", tag
 
 	def handle_endtag(self, tag):
