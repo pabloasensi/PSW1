@@ -23,8 +23,8 @@ class MyHTMLParser(HTMLParser):
 			print 'Matches sorted by maximum similarity \n'
 			self.avsim = True
 		if self.neededata:
-			if data == '-&gt':
-				print '-\>'
+			if data == '-':
+				print '->'
 			else:
 				print data
 
