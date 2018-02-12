@@ -4,10 +4,13 @@ from HTMLParser import HTMLParser
 class MyHTMLParser(HTMLParser):
 	neededata = False
 	avsim = False
+	counter = 1
 
 	def handle_starttag(self, tag, attrs):
 		if tag == 'td' and self.avsim:
 			self.neededata = True
+			print counter
+			counter += 1
 			# print "Encountered a start tag:", tag
 
 	def handle_endtag(self, tag):
@@ -20,6 +23,7 @@ class MyHTMLParser(HTMLParser):
 
 	def handle_data(self, data):
 		if data == 'Matches sorted by maximum similarity (':
+			print 'Matches sorted by maximum similarity \n'
 			self.avsim = True
 		if self.neededata:
 			if data == '-&gt':
