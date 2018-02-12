@@ -17,4 +17,5 @@ class MyHTMLParser(HTMLParser):
 
 parser = MyHTMLParser()
 f = open('./result/match0-top.html', 'r')
+print '/n'
 parser.feed(f.read())
