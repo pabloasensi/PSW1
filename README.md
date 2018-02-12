@@ -67,7 +67,7 @@ java15, java15dm, java12, java11, python3, c/c++, c#-1.2, char, text, scheme)
 Code Example:
 
 ```
-bash shell.sh -c java17 ./ex1/student1 ./ex1/student2
+bash shell.sh -s java17 ./ex1/student1 ./ex1/student2
 ```
 
 Once executed the program will ask you if you desire to eliminate certain leftover 
