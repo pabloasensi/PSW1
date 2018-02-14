@@ -24,7 +24,7 @@ class MyHTMLParser(HTMLParser):
 			self.avsim = True
 		if self.neededata:
 			if data == '-':
-				print '->'
+				print '<->'
 			else:
 				print data
 
